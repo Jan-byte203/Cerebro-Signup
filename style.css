@@ -23,6 +23,6 @@
     #info {
         font-size: 1.0em; /* Adjust this value to change the size of the text */
         letter-spacing: 0.5em; /* Adjust this value to change the space between characters */
-        transform: scaleY(1.8); /* Adjust this value to change the height of the text */
+        transform: scaleY(2.8); /* Adjust this value to change the height of the text */
     }
 }
