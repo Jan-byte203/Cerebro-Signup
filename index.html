@@ -8,15 +8,40 @@
     <style>
         body { margin: 0; }
         canvas { display: block; } /* Ensures the canvas fits the window without overflow */
+        #play-button {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding: 10px 20px;
+            font-size: 1.2em;
+            color: #eeeeee;
+            background: transparent;
+            border: 2px solid #eeeeee;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        #play-button:hover {
+            background: #eeeeee;
+            color: #000000;
+        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 </head>
 <body>
     <div id="info">c  e  r  e  b  r  o</div>
-    <audio id="background-music" loop autoplay>
+    <audio id="background-music" loop>
         <source src="Surne - Jaded.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
+    <button id="play-button" onclick="playAudio()">Play Music</button>
     <script src="whirlwind.js"></script>
+    <script>
+    function playAudio() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    }
+    </script>
 </body>
 </html>
