@@ -21,7 +21,6 @@
 /* When the screen is 600px wide or less, reduce the font size, limit the width, and increase the height */
 @media screen and (max-width: 600px) {
     #info {
-        font-size: 1.0em;
         max-width: 90%; /* Adjust this value to change the maximum width */
         margin: 0 auto; /* Centers the text if it's narrower than the maximum width */
         line-height: 1.5em; /* Adjust this value to change the height of the text */
