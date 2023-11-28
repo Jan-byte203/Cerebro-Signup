@@ -1,0 +1,26 @@
+
+#info {
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    z-index: 100;
+    display: block;
+    font-size: 3em; /* Adjust this value to change the size of the text */
+    color: #ffffff; /* Adjust this value to change the color of the text */
+    letter-spacing: 1em; /* Adjust this value to change the space between characters */
+    text-shadow: 0 0 10px #8B3A62, /* pink glow */
+    0 0 20px #8B3A62,
+    0 0 30px #8B3A62,
+    0 0 40px #8B3A62,
+    0 0 50px #8B3A62,
+    0 0 60px #8B3A62,
+    0 0 70px #8B3A62;
+
+}
+
+#info:hover {
+    color: #ADD8E6; /* Change color on hover */
+}
