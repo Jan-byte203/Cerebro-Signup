@@ -35,12 +35,16 @@
         <source src="Surne - Jaded.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
-    <button id="play-button" onclick="playAudio()">Play Music</button>
+    <button id="play-button" onclick="toggleAudio()">Play Music</button>
     <script src="whirlwind.js"></script>
     <script>
-    function playAudio() {
+    function toggleAudio() {
         var audio = document.getElementById('background-music');
-        audio.play();
+        if (audio.paused) {
+            audio.play();
+        } else {
+            audio.pause();
+        }
     }
     </script>
 </body>

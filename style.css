@@ -21,6 +21,6 @@
 /* When the screen is 600px wide or less, reduce the font size */
 @media screen and (max-width: 600px) {
     #info {
-        font-size: 1.4em;
+        font-size: 1.2em;
     }
 }
